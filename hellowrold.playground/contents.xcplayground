@@ -3,5 +3,6 @@
     <pages>
         <page name='simple-value'/>
         <page name='control-flow'/>
+        <page name='functions-closures'/>
     </pages>
 </playground>
