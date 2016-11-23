@@ -57,14 +57,24 @@ func returnFifteen() -> Int {
 returnFifteen();
 
 // Functions are first-class type
-func makeIncrementer() -> ((Int) -> Int) {
-    func addOne(number: Int) -> Int {
-        return 1 + number;
+func makeIncrementer() -> (Int) -> (Int) -> Int {
+    
+    func addOne(number: Int) -> (Int) -> Int {
+        
+        func addTwo(number: Int) -> Int {
+            return 5 + number;
+        }
+        
+        
+        return addTwo;
     }
+    
     return addOne;
 }
+
 var increment = makeIncrementer();
-increment(7);
+var increment2 = increment(7);
+increment2(4);
 
 // Function can be an argument
 func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
@@ -91,7 +101,10 @@ var haha = numbers.map({
 print(haha);
 
 // More concise way to write closure
-let mappedNumbers = numbers.map({ number in 3 * number })
+// Because in map() declaration, the argument (the function we are passing) type has already been defined, we don't need to write it again
+let mappedNumbers = numbers.map({
+    number in 3 * number
+});
 print(mappedNumbers)
 
 

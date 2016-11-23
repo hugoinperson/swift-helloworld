@@ -3,6 +3,7 @@
     <pages>
         <page name='simple-value'/>
         <page name='control-flow'/>
+        <page name='objects-classes'/>
         <page name='functions-closures'/>
     </pages>
 </playground>
