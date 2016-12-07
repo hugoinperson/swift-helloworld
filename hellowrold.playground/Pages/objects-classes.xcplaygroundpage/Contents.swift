@@ -107,6 +107,7 @@ class TriangleAndSquare {
         triangle = EquilateralTriangle(sideLength: size, name: name)
     }
 }
+
 var triangleAndSquare = TriangleAndSquare(size: 10, name: "another test shape")
 print(triangleAndSquare.square.sideLength)
 print(triangleAndSquare.triangle.sideLength)
