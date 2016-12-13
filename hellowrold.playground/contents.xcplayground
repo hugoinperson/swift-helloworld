@@ -6,5 +6,6 @@
         <page name='objects-classes'/>
         <page name='enumerations-structures'/>
         <page name='functions-closures'/>
+        <page name='protocols-extensions'/>
     </pages>
 </playground>
