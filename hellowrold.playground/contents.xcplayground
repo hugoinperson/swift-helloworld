@@ -7,5 +7,6 @@
         <page name='enumerations-structures'/>
         <page name='functions-closures'/>
         <page name='protocols-extensions'/>
+        <page name='error-handling'/>
     </pages>
 </playground>
