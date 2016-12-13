@@ -8,5 +8,6 @@
         <page name='functions-closures'/>
         <page name='protocols-extensions'/>
         <page name='error-handling'/>
+        <page name='generics'/>
     </pages>
 </playground>
